@@ -1,0 +1,11 @@
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/bin/Debug/netcoreapp2.1/Programa1.deps.json
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/bin/Debug/netcoreapp2.1/Programa1.runtimeconfig.json
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/bin/Debug/netcoreapp2.1/Programa1.runtimeconfig.dev.json
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/bin/Debug/netcoreapp2.1/Programa1.dll
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/bin/Debug/netcoreapp2.1/Programa1.pdb
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Debug/netcoreapp2.1/Programa1.csprojAssemblyReference.cache
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Debug/netcoreapp2.1/Programa1.csproj.CoreCompileInputs.cache
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Debug/netcoreapp2.1/Programa1.AssemblyInfoInputs.cache
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Debug/netcoreapp2.1/Programa1.AssemblyInfo.cs
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Debug/netcoreapp2.1/Programa1.dll
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Debug/netcoreapp2.1/Programa1.pdb
