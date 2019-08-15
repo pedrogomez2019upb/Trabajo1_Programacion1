@@ -1,9 +1,14 @@
 ﻿//******************************************************************************
 //-- ADAPTACION GETTERS SETTERS Y LISTA
 //******************************************************************************
-//Programa General
+//----Programa General----
+//Primero nos toca cargar las librerias necesarias para el desarrollo del programa.
 using System;
+//Este va a ser importante para la creacion de las listas
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Programa1
 {
@@ -14,7 +19,10 @@ namespace Programa1
             //Damos un mensaje de bienvenida
             Console.WriteLine("Hola! Bienvenido al programa del listado de empleados de la empresa iFastCO.");
             Console.WriteLine("____________________________________________________________________________");
-
+            //******************************************************************************
+            //-- CREACION DE EMPLEADOS
+            //******************************************************************************
+            //Aqui vamos a crear los objetos correspondietes a cada uno de los empleados
             //Primero creamos emp1
             Empleado emp1 = new Empleado();
             //Creamos el id
@@ -44,7 +52,44 @@ namespace Programa1
             emp3.sueldo = 2300000;
             emp3.genero = "M";
             Console.WriteLine("\t\nEmpleado:" + emp3.id + "\tNombre: " + emp3.nombre + "\tApellido: " + emp3.apellido + "\tSueldo: " + emp3.sueldo+"\tGenero: "+emp3.genero);
+            //******************************************************************************
+            //-- GENERACIÓN DE SUELDO POR EMPLEADO
+            //******************************************************************************
+            //Como anteriormente creamos una funcion para calcular el sueldo de cada empleado, lo
+            //vamos a aplicar mediante cada uno. Al empleado 1 le vamos a poner 20 dias trabjados,
+            //10 dias al segundo empleado y al tercero 30 dias
+            double sueldo1 = emp1.calcularSueldo(20);
+            double sueldo2 = emp2.calcularSueldo(10);
+            double sueldo3 = emp3.calcularSueldo(30);
+            //******************************************************************************
+            //-- CREACION DE LISTA PARA LOS EMPLEADOS
+            //******************************************************************************
+            //Para crear la lista que contenga a los empleados simplemente utilizamos List<clase> nombrelista = new List<clase>();
+            List<Empleado> listaEmpleados = new List<Empleado>();
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("Inicio de lista");
+            Console.WriteLine("____________________________________________________________________________");
+            //******************************************************************************
+            //-- IMPRIMIR LISTA INICIAL
+            //******************************************************************************
+            //Imprimimos los valores iniciales de la lista
+            Console.WriteLine("\nAl momento de crear el listado , esta tiene la siguiente capacidad: {0}", listaEmpleados.Capacity);
+            listaEmpleados.Add(emp1);
             Console.WriteLine("\nGracias por utilizar este programa");
+            //******************************************************************************
+            //-- IMPLEMENTAR A LOS EMPLEADOS
+            //******************************************************************************
+            //Para agregar a los empleados simplemente utilizamos:
+            //lista.Add(objeto);
+            listaEmpleados.Add(emp1);
+            listaEmpleados.Add(emp2);
+            listaEmpleados.Add(emp3);
+            //******************************************************************************
+            //-- IMPRIMIR LISTA FINAL
+            //******************************************************************************
+            //Vamos a imprimir la lista
+            Console.WriteLine("\n La capacidad de esta lista es de: {0} empleados", listaEmpleados.Capacity);
+
         }
     }
 }

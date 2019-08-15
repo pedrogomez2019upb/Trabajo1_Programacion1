@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Programa1
 {
     //Dejamos publico la clase Empleado
-    public class Empleado
+    class Empleado
     {
         //******************************************************************************
         //-- CREACION DE LA CANTIDAD DE EMPLEADOS
@@ -41,22 +41,96 @@ namespace Programa1
         //Finalmente creamos un int para el "sueldo"
         public int sueldo;
 
+
+        //******************************************************************************
+        //-- CONTADOR PARA CANTIDAD DE EMPLEADOS
+        //******************************************************************************
+        //Para poder contar la cantidad de empleados, vamos a crear que cada vez que
+        //añademos un empleado por la variable id , este la agregue a un contador
+        //llamado "cantidadEmpleados".
+        public Empleado()
+        {
+            cantidadEmpleados++;
+            //Hacemos que este reciba el valor de id a cantidadEmpleados
+            this.id = cantidadEmpleados;
+        }
+        //******************************************************************************
+        //-- ESTABLECIENDO CADA VARIABLE
+        //******************************************************************************
+        //En C# es necesario establecer cada variable que valor recibe .
+        //Para ello utilizamos this.varialbe = variable. con cada variable que creamos.
+        public Empleado(int id, string nombre, string apellido, String genero, int sueldo, int diasTrabajados)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.genero = genero;
+            this.sueldo = sueldo;
+        }
+        //******************************************************************************
+        //-- CREANDO SETTERS
+        //******************************************************************************
+        //Los setters son importantes para declarar las variables utilizadas.
+        //Para ello , usamos setVarible para eso
+
+        public void setId(int id)
+        {
+            this.id = id;
+        }
+        public void setNombre(String nombre)
+        {
+            this.nombre = nombre;
+        }
+        public void setApellido(String apellido)
+        {
+            this.apellido = apellido;
+        }
+        public void setGenero(String genero)
+        {
+            this.genero = genero;
+        }
+        public void setSueldo(int sueldo)
+        {
+            this.sueldo = sueldo;
+        }
+        //******************************************************************************
+        //-- CREANDO GETTERS
+        //******************************************************************************
+        //Utilizamos los getters para obtener un retorno.
+        //Para crer uno se hace un comando silimar al de los setters, solamente
+        //que le vamos a cambiar set a get y adentro de ello le decimos que
+        //retorne el resultado.
+        public int getId()
+        {
+            return this.id;
+        }
+        public String getNombre()
+        {
+            return this.nombre;
+        }
+        public String getApellido()
+        {
+            return this.apellido;
+        }
+        public String getGenero()
+        {
+            return this.genero;
+        }
+        public int getSueldo()
+        {
+            return this.sueldo;
+        }
+        //******************************************************************************
+        //-- CREANDO VARIABLE PARA CALCULAR SUELDO
+        //******************************************************************************
+        //Para ello creamos calcularSueldo con la propiedad del camello y
+        //decimos que el sueldototal es el sueldo por los dias trabajados
+        //dividido en 30
+        public double calcularSueldo(int dias)
+        {
+            return (this.sueldo * dias / 30);
+        }
+
     }
-    //******************************************************************************
-    //-- CONTADOR 
-    //******************************************************************************
-    public Empleado(int id, string nombre, string apellido, char genero, int sueldo, int diasTrabajados)
-{
-    numero
-    this.id = id;
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.genero = genero;
-    this.sueldo = sueldo;
-    this.diasTrabajados = diasTrabajados;
-}
-    public Empleado() { numeroEmpleados++;this.id = numeroEmpleados; }
-
-
 }
 //Desarrollado por Pedro Felipe Gomez Bonilla / ID:000396221
