@@ -1,4 +1,7 @@
-﻿//Clase empleado
+﻿//******************************************************************************
+//-- ADAPTACION GETTERS SETTERS Y LISTA
+//******************************************************************************
+//Clase empleado
 using System;
 namespace Programa1
 {
@@ -18,45 +21,6 @@ namespace Programa1
         //Finalmente creamos un int para el "sueldo"
         public int sueldo;
 
-    }
-
-    public Empleado(string nombre,string apellido, string id,string genero , int sueldo , int diasTrabajados)
-        {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.genero = genero;
-        this.sueldo = sueldo;
-        this.diasTrabajados = diasTrabajados;
-}
-    public int getId {
-        return id;
-    }
-    public string getNombre
-    {
-        return nombre;
-    }
-    public string getApellido
-    {
-        return apellido;
-    }
-    public string getGenero
-    {
-        return genero;
-    }
-    public int getSueldo
-    {
-        return sueldo;
-    }
-    public int getDiasTrab
-    {
-        return diasTrabajados;
-    }
-
-    public float calcularSueldo()
-    {
-        float sueldoAPagar = 0;
-        sueldoAPagar = sueldo * diasTrabajados 
     }
 }
 //Desarrollado por Pedro Felipe Gomez Bonilla / ID:000396221

@@ -1,5 +1,9 @@
-﻿//Programa General
+﻿//******************************************************************************
+//-- ADAPTACION GETTERS SETTERS Y LISTA
+//******************************************************************************
+//Programa General
 using System;
+using System.Collections.Generic;
 
 namespace Programa1
 {
@@ -41,14 +45,6 @@ namespace Programa1
             emp3.genero = "M";
             Console.WriteLine("\t\nEmpleado:" + emp3.id + "\tNombre: " + emp3.nombre + "\tApellido: " + emp3.apellido + "\tSueldo: " + emp3.sueldo+"\tGenero: "+emp3.genero);
             Console.WriteLine("\nGracias por utilizar este programa");
-            //Vamos a crear una nueva lista para los empleados
-            Console.WriteLine("\nNUEVA LISTA DE EMPLEADOS");
-            List<Empleado> listaEmpleados = new List<Empleado>();
-            Console.WriteLine("Inicio de la lista : {0}",listaEmpleados.Capacity);
-            listaEmpleados.Add(emp1);
-            listaEmpleados.Add(emp2);
-            listaEmpleados.Add(emp3);
-            Console.WriteLine("Total de la lista : {0}", listaEmpleados.Capacity);
         }
     }
 }

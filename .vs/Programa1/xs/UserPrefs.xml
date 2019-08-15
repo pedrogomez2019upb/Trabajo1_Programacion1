@@ -1,9 +1,15 @@
 ﻿<Properties StartupConfiguration="{5C376F53-357F-49A6-98DC-1B7A47C1AF5E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Programa1/Program.cs">
     <Files>
-      <File FileName="Programa1/Program.cs" Line="1" Column="19" />
-      <File FileName="Programa1/Empleado.cs" Line="21" Column="61" />
+      <File FileName="Programa1/Empleado.cs" Line="18" Column="23" NotebookId="1" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="1680" Y="23" Width="1920" Height="1035">
+        <Files>
+          <File FileName="Programa1/Program.cs" Line="19" Column="42" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
