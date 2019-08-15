@@ -38,6 +38,8 @@ namespace Programa1
         public int id;
         //Un String para el género
         public String genero;
+        //Un String para dias trabajados
+        public int diasTrabajados;
         //Finalmente creamos un int para el "sueldo"
         public int sueldo;
 
@@ -66,6 +68,7 @@ namespace Programa1
             this.apellido = apellido;
             this.genero = genero;
             this.sueldo = sueldo;
+            this.diasTrabajados = diasTrabajados;
         }
         //******************************************************************************
         //-- CREANDO SETTERS
@@ -92,6 +95,10 @@ namespace Programa1
         public void setSueldo(int sueldo)
         {
             this.sueldo = sueldo;
+        }
+        public void setDiasTrabajados (int diasTrabajados)
+        {
+            this.diasTrabajados = diasTrabajados;
         }
         //******************************************************************************
         //-- CREANDO GETTERS
@@ -120,6 +127,10 @@ namespace Programa1
         {
             return this.sueldo;
         }
+        public int getDiasTrabajados()
+        {
+            return this.diasTrabajados;
+        }
         //******************************************************************************
         //-- CREANDO VARIABLE PARA CALCULAR SUELDO
         //******************************************************************************
@@ -129,6 +140,11 @@ namespace Programa1
         public double calcularSueldo(int dias)
         {
             return (this.sueldo * dias / 30);
+        }
+        public override string ToString()
+        {
+            return string.Format("{0}\t{1}\t{2}\t{3}\t{4:C2}\t\t\t{5}\t\t{6:C2}",
+                getId(),getNombre(),getGenero(),getSueldo(),getDiasTrabajados(),calcularSueldo());
         }
 
     }
