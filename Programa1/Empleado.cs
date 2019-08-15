@@ -141,6 +141,9 @@ namespace Programa1
         {
             return (this.sueldo * dias / 30);
         }
+        //******************************************************************************
+        //-- CREANDO TOSTRING
+        //******************************************************************************
         public override string ToString()
         {
             return string.Format("{0}\t{1}\t{2}\t{3}\t{4:C2}\t\t\t{5}\t\t{6:C2}",
