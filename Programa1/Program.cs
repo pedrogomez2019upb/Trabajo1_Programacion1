@@ -74,8 +74,6 @@ namespace Programa1
             //******************************************************************************
             //Imprimimos los valores iniciales de la lista
             Console.WriteLine("\nAl momento de crear el listado , esta tiene la siguiente capacidad: {0}", listaEmpleados.Capacity);
-            listaEmpleados.Add(emp1);
-            Console.WriteLine("\nGracias por utilizar este programa");
             //******************************************************************************
             //-- IMPLEMENTAR A LOS EMPLEADOS
             //******************************************************************************
@@ -88,8 +86,9 @@ namespace Programa1
             //-- IMPRIMIR LISTA FINAL
             //******************************************************************************
             //Vamos a imprimir la lista
-            Console.WriteLine("\n La capacidad de esta lista es de: {0} empleados", listaEmpleados.Capacity);
-
+            Console.WriteLine("\nDespues de agregar a los empleados, la capacidad de esta lista es de: {0} empleados", listaEmpleados.Capacity);
+            //Nos despedidos del usuario
+            Console.WriteLine("\nGracias por utilizar este programa");
         }
     }
 }
