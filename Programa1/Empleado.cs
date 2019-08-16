@@ -96,7 +96,7 @@ namespace Programa1
         {
             this.sueldo = sueldo;
         }
-        public void setDiasTrabajados (int diasTrabajados)
+        public void setDiasTrabajados(int diasTrabajados)
         {
             this.diasTrabajados = diasTrabajados;
         }
@@ -144,12 +144,18 @@ namespace Programa1
         //******************************************************************************
         //-- CREANDO TOSTRING
         //******************************************************************************
-        public override string ToString()
+        //Habia error con tostring
+        /*public override string ToString()
         {
-            return string.Format("{0}\t{1}\t{2}\t{3}\t{4:C2}\t\t\t{5}\t\t{6:C2}",
-                getId(),getNombre(),getGenero(),getSueldo(),getDiasTrabajados(),calcularSueldo());
+            return string.Format("{0}\t{1}\t{2}\t{3}\t{4}\t\t}",
+                                 getId(),
+                                 getNombre(),
+                                 getGenero(),
+                                 getSueldo(),
+                                 getDiasTrabajados());
         }
-
+        */
+    
     }
 }
 //Desarrollado por Pedro Felipe Gomez Bonilla / ID:000396221

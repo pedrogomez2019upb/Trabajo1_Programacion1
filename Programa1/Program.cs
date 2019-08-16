@@ -26,8 +26,10 @@ namespace Programa1
             //******************************************************************************
             //-- LABORATORIO : EMPLEADA 1 PATRICIA BARRIGA
             //******************************************************************************
+            //Añadimos a la empleada 1 con el metodo de la funcion 
             Empleado emp1 = new Empleado(1, "Patricia", "Barriga", "F", 1500000, 20);
             Console.WriteLine(emp1);
+            //El siguiente metodo se hace de una vez por cada valor
             //Creamos el empleado 2.
             Empleado emp2 = new Empleado();
             //Creamos el id
@@ -72,6 +74,8 @@ namespace Programa1
             double sueldo2 = emp2.calcularSueldo(emp2.diasTrabajados);
             double sueldo3 = emp3.calcularSueldo(emp3.diasTrabajados);
             double sueldo4 = emp4.calcularSueldo(emp4.diasTrabajados);
+            double totalSueldo = ((sueldo1 + sueldo2 + sueldo3 + sueldo4));
+            double promedioDias = ((emp1.diasTrabajados + emp2.diasTrabajados + emp3.diasTrabajados + emp4.diasTrabajados) / 4);
             //******************************************************************************
             //-- CREACION DE LISTA PARA LOS EMPLEADOS
             //******************************************************************************
@@ -81,41 +85,55 @@ namespace Programa1
             Console.WriteLine("Inicio de lista");
             Console.WriteLine("____________________________________________________________________________");
             //******************************************************************************
-            //-- IMPRIMIR LISTA INICIAL
-            //******************************************************************************
-            //Imprimimos los valores iniciales de la lista
-            Console.WriteLine("\nAl momento de crear el listado , esta tiene la siguiente capacidad: {0}", listaEmpleados.Capacity);
-            //******************************************************************************
             //-- IMPLEMENTAR A LOS EMPLEADOS
             //******************************************************************************
             //Para agregar a los empleados simplemente utilizamos:
+            
             //lista.Add(objeto);
             listaEmpleados.Add(emp2);
             listaEmpleados.Add(emp3);
             listaEmpleados.Add(emp4);
             listaEmpleados.Insert(0, emp1);
             //******************************************************************************
-            //-- IMPRIMIR LISTA FINAL
+            //-- IMPRIMIR LISTAS 
             //******************************************************************************
             //Vamos a imprimir la lista
-            Console.WriteLine("\nDespues de agregar a los empleados, la capacidad de esta lista es de: {0} empleados", listaEmpleados.Capacity);
+            Console.WriteLine("----------Lista Normal----------");
+            listaEmpleados.ForEach(Console.WriteLine);
+            //******************************************************************************
+            //-- CREANDO VECTORES DE OBJETOS
+            //******************************************************************************
+            //Primero creamos el listado tipo vector
+            
+            Console.WriteLine("----------Lista Vectores----------");
+            Empleado[] trabajadores = new Empleado[4];
+            trabajadores[0] = emp1;
+            trabajadores[1] = emp2;
+            trabajadores[2] = emp3;
+            trabajadores[3] = emp4;
+            //Se intenta imprimir pero el vector deja errores
+            
+            for (int i = 0; i < trabajadores.Length; i++)
+            {
+                Console.WriteLine(trabajadores[i]);
+            }
+            
+                //******************************************************************************
+                //-- FINAL LISTAS 
+                //******************************************************************************
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("Final Lista");
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("\nCantidad de empleados: {0} empleados", listaEmpleados.Capacity);
+            Console.WriteLine("\nAcumulado sueldo total:{0:C2} COP", totalSueldo);
+            Console.WriteLine("\nPromedio de dias trabajados:{0} dias", promedioDias);
             //Nos despedidos del usuario
             Console.WriteLine("\nGracias por utilizar este programa");
-            listaEmpleados.ForEach(Console.WriteLine);
-
+            
+            
         }
     }
 }
 //Desarrollado por Pedro Felipe Gomez Bonilla / ID:000396221
-/*
-Empleado emp1 = new Empleado();
-emp1.id = 1;
-            emp1.nombre = "Patricia";
-            emp1.apellido = "Barriga";
-            emp1.sueldo = 1500000;
-            emp1.genero = "F";
-            emp1.diasTrabajados = 25;
-            Console.WriteLine("\t\nEmpleado:" + emp1.id + "\tNombre: " + emp1.nombre + "\tApellido: " + emp1.apellido + "\tSueldo: " + emp1.sueldo + "\t\tGenero: " + emp1.genero);
-            */
 
 

@@ -1,0 +1,3 @@
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Release/netcoreapp2.1/Programa1.csproj.CoreCompileInputs.cache
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Release/netcoreapp2.1/Programa1.AssemblyInfoInputs.cache
+/Users/pipe22007/Documents/Trabajo1_Programacion/Programa1/Programa1/obj/Release/netcoreapp2.1/Programa1.AssemblyInfo.cs
