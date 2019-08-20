@@ -129,11 +129,14 @@ namespace Programa1
             Console.WriteLine("\nPromedio de dias trabajados:{0} dias", promedioDias);
             //Nos despedidos del usuario
             Console.WriteLine("\nGracias por utilizar este programa");
-            
+            Empleado emp8 = new Empleado();
+            emp8.capturarDatos();
             
         }
     }
 }
 //Desarrollado por Pedro Felipe Gomez Bonilla / ID:000396221
+
+    
 
 

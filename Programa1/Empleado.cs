@@ -141,6 +141,7 @@ namespace Programa1
         {
             return (this.sueldo * dias / 30);
         }
+
         //******************************************************************************
         //-- CREANDO TOSTRING
         //******************************************************************************
@@ -155,6 +156,21 @@ namespace Programa1
                                  getDiasTrabajados());
         }
         */
+        //******************************************************************************
+        //-- CREANDO FUNCION PARA CAPTURAR DATOS MEDIANTE READLINE
+        //******************************************************************************
+        //Primero creamos el nombre de la funcion
+        public void capturarDatos()
+        {
+            //Creamos el mensaje
+            Console.Write("ID: ");
+            //Obtenemos los datos y los convertimos si vemos que es necesario.
+            this.id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Nombre: ");
+            this.nombre = Console.ReadLine();
+            Console.Write("Apellido: ");
+            this.apellido = Console.ReadLine();
+        }
     
     }
 }
