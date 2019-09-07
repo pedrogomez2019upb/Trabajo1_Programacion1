@@ -14,6 +14,7 @@ namespace Programa1
     //Dejamos publico la clase Empleado
     class Empleado
     {
+
         //******************************************************************************
         //-- CREACION DE LA CANTIDAD DE EMPLEADOS
         //******************************************************************************
